@@ -1,0 +1,56 @@
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
+
+killport() {
+  kill -9 $(lsof -t -i tcp:$1)
+}
+
+
+alias python='python3'
+alias gpuo='git push -u origin $(git rev-parse --abbrev-ref HEAD)'
+alias gbuo='git branch -u origin/$(git rev-parse --abbrev-ref HEAD)'
+alias grho='git reset --hard origin/$(git rev-parse --abbrev-ref HEAD)'
+alias glc='git log --pretty=format:"%h %s"'
+alias gbs='git branch --sort=-committerdate'
+
+GATHER_AC_ZSH_SETUP_PATH=/Users/justinyu/Library/Caches/gather-cli/autocomplete/zsh_setup && test -f $GATHER_AC_ZSH_SETUP_PATH && source $GATHER_AC_ZSH_SETUP_PATH; # gather autocomplete setup
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/justinyu/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/justinyu/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/justinyu/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/justinyu/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+GATHER_AC_ZSH_SETUP_PATH=/Users/justinyu/Library/Caches/gather-cli/autocomplete/zsh_setup && test -f $GATHER_AC_ZSH_SETUP_PATH && source $GATHER_AC_ZSH_SETUP_PATH; # gather autocomplete setup
+
+alias matlaber="ssh -K justinyu@matlaber6.media.mit.edu"
+
+
+GATHER_AC_ZSH_SETUP_PATH=/Users/justinyu/Library/Caches/gather-cli/autocomplete/zsh_setup && test -f $GATHER_AC_ZSH_SETUP_PATH && source $GATHER_AC_ZSH_SETUP_PATH; # gather autocomplete setup
+
+eval $(thefuck --alias)
+
+export OPENAI_API_KEY=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
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/justinyu/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/justinyu/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/justinyu/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/justinyu/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+
+export PATH=$PATH:$(go env GOPATH)/bin
+
+
+GATHER_AC_ZSH_SETUP_PATH=/Users/justinyu/Library/Caches/gather-cli/autocomplete/zsh_setup && test -f $GATHER_AC_ZSH_SETUP_PATH && source $GATHER_AC_ZSH_SETUP_PATH; # gather autocomplete setup

@@ -1,0 +1,30 @@
+{
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "python.analysis.typeCheckingMode": "basic",
+  "editor.tabSize": 4,
+  "jest.jestCommandLine": "npm run test:vscode --",
+  "jest.autoRun": "off",
+  "bracketPairColorizer.depreciation-notice": false,
+  "editor.formatOnSave": true,
+  "[go]": {
+    "editor.defaultFormatter": "golang.go"
+  },
+  "go.toolsManagement.autoUpdate": true,
+
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "[python]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "ms-python.autopep8",
+    "editor.formatOnType": true
+  },
+  "python.formatting.provider": "none",
+  "editor.inlineSuggest.enabled": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+}
+
