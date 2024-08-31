@@ -15,12 +15,6 @@
   // 	],
   // 	"description": "Log output to console"
   // }
-  "Print to console": {
-    "scope": "javascript, typescript, javascriptreact, typescriptreact",
-    "prefix": "log",
-    "body": ["console.log(\"$1\");", "$2"],
-    "description": "Log output to console"
-  },
   "useEffect hook": {
     "scope": "javascript, typescript, javascriptreact, typescriptreact",
     "prefix": "useE",
@@ -54,30 +48,6 @@
       "justify-content: center;"
     ],
     "description": "Flex center"
-  },
-  "emotion": {
-    "scope": "javascript, typescript, javascriptreact, typescriptreact",
-    "prefix": "emo",
-    "body": ["const $1 = styled.div`\n\t$2\n`;"],
-    "description": "Emotion div"
-  },
-  "export emotion": {
-    "scope": "javascript, typescript, javascriptreact, typescriptreact",
-    "prefix": "eemo",
-    "body": ["export const $1 = styled.div`\n\t$2\n`;"],
-    "description": "Emotion div"
-  },
-  "styled": {
-    "scope": "javascript, typescript, javascriptreact, typescriptreact",
-    "prefix": "sty",
-    "body": ["import styled from \"@emotion/styled\";"],
-    "description": "Import styled"
-  },
-  "isMobile": {
-    "scope": "javascript, typescript, javascriptreact, typescriptreact",
-    "prefix": "ism",
-    "body": ["const isMobileScreenSize = useIsMobileScreenSize();"],
-    "description": "isMobileScreensize"
   },
   "react functional component": {
     "scope": "javascript, typescript, javascriptreact, typescriptreact",
@@ -140,4 +110,3 @@
     "description": "ternary expression in t strings"
   }
 }
-
